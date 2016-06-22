@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Vincent Yang ECS 89h Assignment 7 May 29, 2016 -->
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CAmap.css"></link>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h1>California Democratic Primary</h1>
+
+<div id="viz">
+  <div id="huff" class="huff-container">
+    <p id="hs" class="huff-survey"></p>
+    <p id="hv" class="huff-votecount"></p>
+  </div>
+
+  <select id="modelOptions">
+  </select> 
+  <select id="dataOptions">
+  </select> 
+  <br>
+  <div id="blocks" class="blocksBackground">
+    <h3>State Wide Delegates</h3>
+    <div id="stateBlocks" class="blocksBackground"></div>
+    <h5>Per District Delegates</h5></div>
+  <div id="caMap">
+    <svg id="california"></svg>
+    <div id="scaleobj">
+      <div id="scale"></div>
+      <div id="maxValue"></div>
+      <div id="minValue"></div>
+    </div>
+  </div>
+</div>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/queue.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="primary.js"></script> <!-- button action -->
+<script src="CAmap.js"></script>
+<script src="blocks.js"></script>  <!-- adds the blocks -->
+<script src="selection.js"></script>
+</body>
+</html>
