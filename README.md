@@ -9,12 +9,14 @@ The server uses node.js to route different queries to/from a `sqlite` database a
 In order to run site, run `npm install` on the needed modules, then `node index.js` to start up the server. 
 The databases are stored in polls.db and census.db. These can be set up server side with `node createDB.js`, though with the `.db` files they are technically already set up.
 
-1. `npm install node-static`
-2. `npm install sqlite3`
-3. `npm install request`
-4. `node createDB.js`
-5. `node index.js`
-6. Point your browser to `localhost:8080`.
+1. `git clone https://github.com/YangVincent/predict-elections.git`
+2. `cd predict-elections`
+3. `npm install node-static`
+4. `npm install sqlite3`
+5. `npm install request`
+6. `node createDB.js`
+7. `node index.js`
+8. Point your browser to `localhost:8080`.
 
 
 ####Model
