@@ -30,3 +30,6 @@ then sent a `GET` request to the [Huffington Post API](http://elections.huffingt
 results returned, it sent the results back to the client. After the client finished processing the Huffington Post results, it executed another query to figure out 
 results for the combined model to display as well. This query also used `fs` on the serverside to save results for voting percentage predictions.
 
+####Warning
+Because this data pulls the 3 most recent polls, some of the top results may be out of date and/or inaccurate. Specific predictions from the time can be found in Vincent.Yang.prediction.txt.
+
