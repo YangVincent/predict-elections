@@ -16,6 +16,12 @@ function modelhuff(resp) {
     totalHVotes += current.hVotes;
     totalBVotes += current.bVotes;
   }
+
+  if (resp === undefined){
+      console.log("oh no");
+  }
+
+
   var percentBernieVotes = totalBVotes/(totalHVotes+totalBVotes);
   total = Math.round(percentBernieVotes*stateWide.length);
 
@@ -44,7 +50,9 @@ function modelhuff(resp) {
 
 function huffback(resp) {
   resp = JSON.parse(resp);
-  b = JSON.parse(resp.body);
+
+  b = JSON.parse(resp);
+
 
 
   var p1 = String(b[0].pollster) + ' ' + String(b[0].end_date);
