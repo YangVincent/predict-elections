@@ -6,6 +6,9 @@ This website uses polling data provided by the WSJ coupled with census data to m
 The server uses node.js to route different queries to/from a `sqlite` database and various API calls. The front end is completed with vanilla JavaScript, HTML/CSS, and D3.js. 
 
 ####Instructions
+You can visit this site through [the Heroku link](https://predict-elections.herokuapp.com) or by running the server locally. Due to Heroku's new free tier, it may take a few
+moments to fully wake up the dyno.
+
 In order to run site, run `npm install` on the needed modules, then `node index.js` to start up the server. 
 The databases are stored in polls.db and census.db. These can be set up server side with `node createDB.js`, though with the `.db` files they are technically already set up.
 
@@ -16,7 +19,7 @@ The databases are stored in polls.db and census.db. These can be set up server s
 5. `npm install request`
 6. `node createDB.js`
 7. `node index.js`
-8. Point your browser to `localhost:8080`.
+8. Point your browser to `localhost:5000`.
 
 
 ####Model
